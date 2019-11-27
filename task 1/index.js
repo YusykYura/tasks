@@ -1,5 +1,5 @@
 function calculateRest(sum = 0, price = 0) {
-    let result;
+    var result;
     if (+sum && +price) {
         result = sum - price;
             if (result < 0) {

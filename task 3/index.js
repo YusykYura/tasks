@@ -14,7 +14,7 @@ function addUser(firstname, lastname, email) {
 
         var tr = createElement('tr');
         var rowId = 'row' + elements.length + 1;
-        tr = addId(tr, rowId)
+        tr = addId(tr, rowId);
         tr = addClass(tr, 'row');
         table[0].append(tr);
 
@@ -54,7 +54,7 @@ function addUser(firstname, lastname, email) {
         var td3 = createElement('td');
         td3 = addClass(td3, 'ifEdit');
         var span3 = createElement('span');
-        span3.innerHTML += email
+        span3.innerHTML += email;
         span3 = addClass(span3, 'row-value email');
         var input3 = createElement('input');
         input3.type = 'text';
@@ -73,7 +73,7 @@ function addUser(firstname, lastname, email) {
 
         var td5 = createElement('td');
         var button = createElement('button');
-        button = addClass(button, 'btn-danger')
+        button = addClass(button, 'btn-danger');
         button.innerHTML += 'Delete';
         button.onclick = function deleteUser() {
             var element = document.getElementById(rowId);
@@ -82,14 +82,14 @@ function addUser(firstname, lastname, email) {
         };
 
         var button2 = createElement('button');
-        button2 = addClass(button2, 'btn-warning')
+        button2 = addClass(button2, 'btn-warning');
         button2.innerHTML += 'Edit';
         button2.onclick = function editUser() {
             initializedEdit(rowId);
         };
 
         var button3 = createElement('button');
-        button3 = addClass(button3, 'edit btn-success')
+        button3 = addClass(button3, 'edit btn-success');
         button3.innerHTML += 'Save';
         button3.onclick = function save() {
             var row = document.getElementById(rowId);
@@ -127,17 +127,17 @@ function addUser(firstname, lastname, email) {
             if (checkedUsers.length) {
                 for (var i = 0; i <= checkedUsers.length; i++) {
                     if (checkedUsers[i] && checkedUsers[i] === rowId) {
-                        row.style.background = '#ffffff'
+                        row.style.background = '#ffffff';
                         exist = true;
                         checkedUsers = checkedUsers.filter(e => e !== rowId);
                     }
                 }
                 if (!exist) {
-                    row.style.background = '#e2e2e2'
+                    row.style.background = '#e2e2e2';
                     checkedUsers.push(rowId);
                 }
             } else {
-                row.style.background = '#e2e2e2'
+                row.style.background = '#e2e2e2';
                 checkedUsers.push(rowId);
             }
         };
@@ -385,7 +385,7 @@ function addId(element, value) {
 }
 
 function addClass(element, value) {
-    element.className = value
+    element.className = value;
     return element;
 }
 

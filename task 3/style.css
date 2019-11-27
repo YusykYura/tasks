@@ -2,11 +2,13 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
+
 th, td {
     border: 1px solid black;
     text-align: center;
     padding: 4px;
 }
+
 th {
     background: #f1ffdf;
     height: 40px;

@@ -12,7 +12,7 @@ function addId(element, value) {
 }
 
 function addClass(element, value) {
-    element.className = value
+    element.className = value;
     return element;
 }
 
