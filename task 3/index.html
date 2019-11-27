@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+<div class="form-add-user">
+    <form>
+        <p>
+            <label for="name">Ім'я <em>*</em> <span id="error-name" class="error"></span></label>
+            <input type="text" id="name">
+        </p>
+        <p>
+            <label for="lastname">Прізвище <em>*</em> <span id="error-lastname" class="error"></span></label>
+            <input type="text" id="lastname">
+        </p>
+        <p>
+            <label for="email">Email <em>*</em> <span id="error-email" class="error"></span></label>
+            <input type="email" id="email">
+        </p>
+    </form>
+</div>
+
+<div class="menu">
+    <button class="btn-success" onclick="addUser(document.getElementById('name').value, document.getElementById('lastname').value, document.getElementById('email').value);">Добавити користувача</button>
+    <button class="btn-confirm" onclick="allowChooseUsers();">Вибрати користувачів</button>
+    <button class="choose btn-danger" onclick="deleteCheckedUsers();">Видалити позначені</button>
+    <button class="choose btn-cancel" onclick="disableChooseUsers();">Відмінити</button>
+</div>
+
+<table border="1" class="table-user">
+    <tr class="header">
+        <th class="header-markup" style="display: none; width: 10px;"></th>
+        <th>Ім'я</th>
+        <th>Прізвище</th>
+        <th>Email</th>
+        <th>Дата</th>
+        <th>Дії</th>
+    </tr>
+</table>
+
+
+<!--<div id="myModal" class="modal">-->
+
+    <!--<div class="modal-content">-->
+        <!--<span class="close" onclick="hideModal();">&times;</span>-->
+    <!--</div>-->
+
+<!--</div>-->
+
+</body>
+</html>

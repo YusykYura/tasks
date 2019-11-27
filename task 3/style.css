@@ -1,0 +1,103 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 4px;
+}
+th {
+    background: #f1ffdf;
+    height: 40px;
+    vertical-align: center;
+    padding: 0;
+}
+
+input {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.form-add-user {
+    width: 50%;
+    margin: auto;
+}
+
+.menu {
+    width: 50%;
+    margin: auto;
+}
+
+.table-user {
+    margin-top: 25px;
+}
+
+.checkbox {
+    border: black 2px solid;
+    padding: 5px;
+    background-color: white;
+}
+
+button {
+    color: #f6f6f6;
+    cursor: pointer;
+    padding: 8px;
+    border: #ffffff 1px solid;
+    border-radius: 5px;
+}
+
+.error {
+    color: #ff8489;
+}
+
+.btn-danger {
+    background-color: #ff8489;;
+}
+
+.btn-danger:hover {
+    background-color: #d46a6e;;
+}
+
+.choose {
+    display: none;
+}
+
+.edit {
+    display: none;
+}
+
+.row-value {
+    display: table-cell;
+}
+
+.btn-warning {
+    background-color: #d3d300;
+}
+
+.btn-success {
+    background-color: #35bc5e;
+}
+
+.btn-success:hover  {
+    background-color: #30a955;
+}
+
+.btn-confirm {
+    background-color: #5a5ad6;
+}
+
+.btn-confirm:hover {
+    background-color: #5668a9;
+}
+
+.btn-cancel {
+    background-color: #8e98b1;
+}
+
+.btn-cancel:hover {
+    background-color: #79839d;
+}
+
